@@ -1,8 +1,8 @@
 {
-  "name": "Fresh Chrome Extension",
-  "description": "Fully functional, useful bare minimum Google Chrome extension boilerplate [Manifest V3].",
-  "homepage_url": "https://github.com/llagerlof/fresh-chrome-extension",
-  "version": "2.0.0",
+  "name": "Everyone Is Stupid Except Me",
+  "description": "An extension to help me take Hacker News less seriously.",
+  "homepage_url": "https://github.com/jakemauer/everyone-is-stupid-except-me",
+  "version": "1.0.0",
   "manifest_version": 3,
   "action": {
     "default_title": "execute.js will run (watch the Chrome DevTools' console)"
@@ -12,16 +12,16 @@
       "run_at" : "document_start",
       "js": ["before.js"],
       "matches": [
-        "https://*/*",
-        "http://*/*"
+        "https://news.ycombinator.com/*",
+        "http://news.ycombinator.com/*"
       ]
     },
     {
       "run_at" : "document_idle",
       "js": ["after.js"],
       "matches": [
-        "https://*/*",
-        "http://*/*"
+        "https://news.ycombinator.com/*",
+        "http://news.ycombinator.com/*"
       ]
     }
   ],
@@ -33,7 +33,7 @@
     "scripting"
   ],
   "host_permissions": [
-    "https://*/*",
-    "http://*/*"
+    "https://news.ycombinator.com/*",
+    "http://news.ycombinator.com/*"
   ]
 }
