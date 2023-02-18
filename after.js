@@ -42,7 +42,7 @@ function chooseTitle(){
 
   // Header Picker
 
-  if (pathname === '/news') {
+  if (pathname === '/' || pathname === '/news') {
     var title = 'Everyone Is Stupid Except Me';
   } else {
     var title = chooseTitle();
